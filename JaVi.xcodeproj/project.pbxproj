@@ -57,11 +57,11 @@
 		530BE78A2A73442E00F05A3C /* JaVi */ = {
 			isa = PBXGroup;
 			children = (
+				530BE79B2A73480600F05A3C /* DataService.swift */,
 				530BE78B2A73442E00F05A3C /* JaViApp.swift */,
 				530BE78D2A73442E00F05A3C /* MainView.swift */,
 				530BE7992A73462400F05A3C /* Movie.swift */,
 				530BE79F2A7348EF00F05A3C /* MovieListRow.swift */,
-				530BE79B2A73480600F05A3C /* DataService.swift */,
 				530BE78F2A73442F00F05A3C /* Assets.xcassets */,
 				530BE7912A73442F00F05A3C /* Preview Content */,
 			);
