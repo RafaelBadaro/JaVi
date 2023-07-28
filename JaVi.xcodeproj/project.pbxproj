@@ -13,6 +13,7 @@
 		530BE7932A73442F00F05A3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 530BE7922A73442F00F05A3C /* Preview Assets.xcassets */; };
 		530BE79A2A73462400F05A3C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530BE7992A73462400F05A3C /* Movie.swift */; };
 		530BE7A02A7348EF00F05A3C /* MovieListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530BE79F2A7348EF00F05A3C /* MovieListRow.swift */; };
+		537D00BE2A734BF3000F1CA3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537D00BD2A734BF3000F1CA3 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		530BE7922A73442F00F05A3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		530BE7992A73462400F05A3C /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		530BE79F2A7348EF00F05A3C /* MovieListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListRow.swift; sourceTree = "<group>"; };
+		537D00BD2A734BF3000F1CA3 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				530BE78D2A73442E00F05A3C /* MainView.swift */,
 				530BE7992A73462400F05A3C /* Movie.swift */,
 				530BE79F2A7348EF00F05A3C /* MovieListRow.swift */,
+				537D00BD2A734BF3000F1CA3 /* DataService.swift */,
 				530BE78F2A73442F00F05A3C /* Assets.xcassets */,
 				530BE7912A73442F00F05A3C /* Preview Content */,
 			);
@@ -147,6 +150,7 @@
 				530BE78E2A73442E00F05A3C /* MainView.swift in Sources */,
 				530BE78C2A73442E00F05A3C /* JaViApp.swift in Sources */,
 				530BE79A2A73462400F05A3C /* Movie.swift in Sources */,
+				537D00BE2A734BF3000F1CA3 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
