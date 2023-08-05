@@ -14,6 +14,9 @@
 		530BE79A2A73462400F05A3C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530BE7992A73462400F05A3C /* Movie.swift */; };
 		530BE7A02A7348EF00F05A3C /* MovieListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530BE79F2A7348EF00F05A3C /* MovieListRow.swift */; };
 		537D00BE2A734BF3000F1CA3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537D00BD2A734BF3000F1CA3 /* DataService.swift */; };
+		538C59362A7DBD8C00B5DADF /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C59352A7DBD8C00B5DADF /* Comment.swift */; };
+		538C59382A7DC45400B5DADF /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C59372A7DC45400B5DADF /* MovieView.swift */; };
+		538C593A2A7DC70800B5DADF /* CommentListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C59392A7DC70800B5DADF /* CommentListRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		530BE7992A73462400F05A3C /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		530BE79F2A7348EF00F05A3C /* MovieListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListRow.swift; sourceTree = "<group>"; };
 		537D00BD2A734BF3000F1CA3 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		538C59352A7DBD8C00B5DADF /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		538C59372A7DC45400B5DADF /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
+		538C59392A7DC70800B5DADF /* CommentListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +66,13 @@
 				530BE78B2A73442E00F05A3C /* JaViApp.swift */,
 				530BE78D2A73442E00F05A3C /* MainView.swift */,
 				530BE7992A73462400F05A3C /* Movie.swift */,
+				538C59352A7DBD8C00B5DADF /* Comment.swift */,
 				530BE79F2A7348EF00F05A3C /* MovieListRow.swift */,
 				537D00BD2A734BF3000F1CA3 /* DataService.swift */,
 				530BE78F2A73442F00F05A3C /* Assets.xcassets */,
 				530BE7912A73442F00F05A3C /* Preview Content */,
+				538C59372A7DC45400B5DADF /* MovieView.swift */,
+				538C59392A7DC70800B5DADF /* CommentListRow.swift */,
 			);
 			path = JaVi;
 			sourceTree = "<group>";
@@ -147,9 +156,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				530BE7A02A7348EF00F05A3C /* MovieListRow.swift in Sources */,
+				538C59362A7DBD8C00B5DADF /* Comment.swift in Sources */,
+				538C59382A7DC45400B5DADF /* MovieView.swift in Sources */,
 				530BE78E2A73442E00F05A3C /* MainView.swift in Sources */,
 				530BE78C2A73442E00F05A3C /* JaViApp.swift in Sources */,
 				530BE79A2A73462400F05A3C /* Movie.swift in Sources */,
+				538C593A2A7DC70800B5DADF /* CommentListRow.swift in Sources */,
 				537D00BE2A734BF3000F1CA3 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

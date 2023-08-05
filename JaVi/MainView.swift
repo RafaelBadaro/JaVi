@@ -10,15 +10,30 @@ import SwiftUI
 struct MainView: View {
     
     @State var movies: [Movie] = [Movie]()
+    var dataService = DataService()
+    
+    init() {
+          //Use this if NavigationBarTitle is with Large Font
+          UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+      }
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Teste Git")
+        NavigationView{
+            
+            List(movies) { movie in
+                NavigationLink(destination: MovieView(movie: movie)){
+                    MovieListRow(movie: movie)
+                }.background(Color.black)
+                
+            }
+             .navigationBarTitle(Text("Movies"))
+             .listStyle(.plain)
+             .background(.black)
+             .onAppear {
+                    movies = dataService.getData()
+            }
         }
-        .padding()
+
     }
 }
 

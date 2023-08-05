@@ -10,7 +10,13 @@ import Foundation
 struct Movie: Identifiable {
     var id: UUID = UUID()
     
-    var name: String
+    var title: String
     var image: String
     var rating: Int
+    var description: String
+    var comments: [Comment]
+    
+    func getFormattedRating() -> String {
+        return String(rating) + "/10"
+    }
 }
