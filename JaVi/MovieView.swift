@@ -13,7 +13,7 @@ struct MovieView: View {
     
     var body: some View {
         
-        VStack{
+        ScrollView{
             
                 HStack{
                     Image(movie.image)
@@ -28,11 +28,13 @@ struct MovieView: View {
                     
                     Text(movie.getFormattedRating())
                         .foregroundColor(Color.white)
+                        
                 }
                 
                 Text(movie.description)
                     .foregroundColor(Color.white)
                     .padding(.vertical)
+                    .fixedSize(horizontal: false, vertical: true)
                 
                 HStack{
                     Text("Comments")
@@ -42,10 +44,13 @@ struct MovieView: View {
                 }.padding()
                 
                 
-                
-                List(movie.comments) { comment in
-                    CommentListRow(comment: comment)
-                }.listStyle(.plain)
+            ForEach(movie.comments, id: \.self){ comment in
+                CommentListRow(comment: comment)
+            }
+            
+//                List(movie.comments) { comment in
+// CommentListRow(comment: comment)
+//                }
 
 
             }.background(Color.black.opacity(1))
@@ -55,9 +60,6 @@ struct MovieView: View {
 
 struct MovieView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieView(movie: Movie(title: "Oppenheimer", image: "oppie", rating: 10,
-                               description: "Oppenheimer (/ˈɒpənhaɪmər/ OP-ən-hy-mər) is a 2023 epic biographical thriller film written and directed by Christopher Nolan. Based on the 2005 biography American Prometheus by Kai Bird and Martin J. Sherwin, the film chronicles the career of American theoretical physicist J. Robert Oppenheimer." ,
-                               comments: [Comment(user:"Laura", content: "It's too damn long!" ), Comment(user:"Rafael", content: "One of the best movies I've ever watched, must watch for everyone" ), Comment(user:"Rafael", content: "One of the best movies I've ever watched, must watch for everyone" ), Comment(user:"Rafael", content: "One of the best movies I've ever watched, must watch for everyone" ), Comment(user:"Rafael", content: "One of the best movies I've ever watched, must watch for everyone" ), Comment(user:"Rafael", content: "One of the best movies I've ever watched, must watch for everyone" )])
-        )
+        MovieView(movie: DataService().getMovies()[0])
     }
 }

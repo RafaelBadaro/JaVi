@@ -20,18 +20,18 @@ struct MainView: View {
     var body: some View {
         NavigationView{
             
-            List(movies) { movie in
-                NavigationLink(destination: MovieView(movie: movie)){
-                    MovieListRow(movie: movie)
-                }.background(Color.black)
-                
-            }
-             .navigationBarTitle(Text("Movies"))
-             .listStyle(.plain)
-             .background(.black)
-             .onAppear {
-                    movies = dataService.getData()
-            }
+            VStack{
+                List(movies) { movie in
+                    NavigationLink(destination: MovieView(movie: movie)){
+                        MovieListRow(movie: movie)
+                    }.listRowBackground(Color.black)
+                }
+                 .navigationBarTitle(Text("Movies"))
+                 .listStyle(.plain)
+                 .onAppear {
+                        movies = dataService.getMovies()
+                }
+            }.background(Color.black)
         }
 
     }

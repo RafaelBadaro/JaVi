@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct Comment: Identifiable {
+struct Comment: Identifiable, Hashable {
     var id: UUID = UUID()
     
     var user: String

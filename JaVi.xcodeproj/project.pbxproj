@@ -65,14 +65,14 @@
 			children = (
 				530BE78B2A73442E00F05A3C /* JaViApp.swift */,
 				530BE78D2A73442E00F05A3C /* MainView.swift */,
+				538C59372A7DC45400B5DADF /* MovieView.swift */,
+				530BE79F2A7348EF00F05A3C /* MovieListRow.swift */,
+				538C59392A7DC70800B5DADF /* CommentListRow.swift */,
+				537D00BD2A734BF3000F1CA3 /* DataService.swift */,
 				530BE7992A73462400F05A3C /* Movie.swift */,
 				538C59352A7DBD8C00B5DADF /* Comment.swift */,
-				530BE79F2A7348EF00F05A3C /* MovieListRow.swift */,
-				537D00BD2A734BF3000F1CA3 /* DataService.swift */,
 				530BE78F2A73442F00F05A3C /* Assets.xcassets */,
 				530BE7912A73442F00F05A3C /* Preview Content */,
-				538C59372A7DC45400B5DADF /* MovieView.swift */,
-				538C59392A7DC70800B5DADF /* CommentListRow.swift */,
 			);
 			path = JaVi;
 			sourceTree = "<group>";
